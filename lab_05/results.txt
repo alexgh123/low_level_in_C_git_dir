@@ -1,0 +1,49 @@
+CFLAGS=-Wall -c
+LDFLAGS= -o
+size:17372
+
+CFLAGS=-Wall -c
+LDFLAGS=--static -o
+size:742956
+
+CFLAGS=-Wall -c -O1
+LDFLAGS= -o
+size:17200
+
+CFLAGS=-Wall -c -O2
+LDFLAGS= -o
+size:17120
+
+CFLAGS=-Wall -c -O3
+LDFLAGS= -o
+size:21156
+
+CFLAGS=-Wall -c -Os
+LDFLAGS= -o
+size:13104
+
+----i initially did the below options, I didn't realize "-g" for valgrind changed the results:
+
+CFLAGS=-Wall -c -g
+LDFLAGS= -o
+size:23764
+
+CFLAGS=-Wall -c -g
+LDFLAGS=--static -o
+size:749348
+
+CFLAGS=-Wall -c -g -O1
+LDFLAGS= -o
+size:34272
+
+CFLAGS=-Wall -c -g -O2
+LDFLAGS= -o
+size:38792
+
+CFLAGS=-Wall -c -g -O3
+LDFLAGS= -o
+size:49404
+
+CFLAGS=-Wall -c -g -Os
+LDFLAGS= -o
+size:29812
